@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Environment Variables (Secrets)
+.env
+
+# Database and Data
+data/app.db
+data/chroma_db/
+# Keep the raw data folder but ignore large files if necessary, or ignore specific files
+# data/raw/
+
+# IDEs and Editors
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Docker
+# (Optional, if you have local overrides)
+docker-compose.override.yml

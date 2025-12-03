@@ -1,0 +1,25 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment variables (secrets)
+.env
+
+# Database and Persistence (Mount these as volumes instead)
+app.db
+chroma_db/
+
+# Jupyter Notebooks
+*.ipynb
+.ipynb_checkpoints
