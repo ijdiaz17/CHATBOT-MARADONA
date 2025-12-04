@@ -56,7 +56,7 @@ CHATBOT10/
 4.  **Configurar variables de entorno**:
     Crea un archivo `.env` en la raíz con tu API Key de OpenAI:
     ```env
-    OPENAI_API_KEY=sk-...
+    OPENAI_API_KEY=...
     ```
 
 5.  **Ejecutar la aplicación**:
@@ -82,13 +82,15 @@ docker run -p 8000:8000 --env-file .env ijdiaz17/chatbot10:latest
 
 ### Opción B: Docker Compose (Con persistencia)
 
-Si tienes el código fuente, la mejor forma de correrlo es con Docker Compose, que asegura que no pierdas tu base de datos:
+1. Si tienes el código fuente, la mejor forma de correrlo es con Docker Compose, que asegura que no pierdas tu base de datos:
 
 ```bash
 docker-compose up -d
 ```
 
-Para detenerlo:
+2. Accede a: `http://localhost:8000`.
+
+3. Para detenerlo:
 ```bash
 docker-compose down
 ```
