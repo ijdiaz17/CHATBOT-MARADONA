@@ -2,7 +2,7 @@
 
 Este proyecto implementa un chatbot basado en LLM que imita la personalidad de Diego Armando Maradona. Utiliza **RAG (Retrieval-Augmented Generation)** para responder con frases icónicas y contexto relevante almacenado en una base de datos vectorial.
 
-![Demostración del Chatbot](docs/screenshots/conversacion_maradona.mp4)
+![Demo](docs/screenshots/conversacion_maradona.gif)
 
 ## 🚀 Características
 
