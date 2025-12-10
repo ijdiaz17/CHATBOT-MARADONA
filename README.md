@@ -69,20 +69,21 @@ CHATBOT10/
 
 ### Opción A: Descargar desde Docker Hub (Recomendado)
 
-Puedes descargar la imagen lista para usar:
+Esta imagen **ya incluye la personalidad y memoria de Diego** (base de datos vectorial y app.db). Puedes descargarla y ejecutarla directamente:
 
 ```bash
 docker pull ijdiaz17/chatbot10:latest
 ```
 
-Para ejecutarla (recuerda que sin volúmenes los datos no se guardan):
+Para ejecutarla:
 ```bash
 docker run -p 8000:8000 --env-file .env ijdiaz17/chatbot10:latest
 ```
+*Nota: Al reiniciar el contenedor, el historial de **nuevas** conversaciones se perderá, pero la personalidad de Diego se mantendrá intacta.*
 
-### Opción B: Docker Compose (Con persistencia)
+### Opción B: Docker Compose
 
-1. Si tienes el código fuente, la mejor forma de correrlo es con Docker Compose, que asegura que no pierdas tu base de datos:
+Si tienes el código fuente, puedes usar Docker Compose para gestionar la configuración fácilmente:
 
 ```bash
 docker-compose up -d

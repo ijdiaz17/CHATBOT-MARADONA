@@ -1,11 +1,10 @@
 services:
   chatbot:
+    image: ijdiaz17/chatbot10:latest
     build: .
     container_name: chatbot10_container
     ports:
       - "8000:8000"
-    volumes:
-      - ./data/app.db:/app/data/app.db
-      - ./data/chroma_db:/app/data/chroma_db
+
     env_file:
       - .env

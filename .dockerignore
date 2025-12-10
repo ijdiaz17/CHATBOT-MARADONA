@@ -17,8 +17,6 @@ pip-delete-this-directory.txt
 .env
 
 # Database and Persistence (Mount these as volumes instead)
-app.db
-chroma_db/
 
 # Jupyter Notebooks
 *.ipynb
